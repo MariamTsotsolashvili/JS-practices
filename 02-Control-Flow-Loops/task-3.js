@@ -6,3 +6,4 @@ else if (val ==='b' || val ==='c' || val ==='d' || val ==='e'){
 }
 else {
     console.log( 'unknown' );
+}
