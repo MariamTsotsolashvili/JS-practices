@@ -9,8 +9,8 @@ function f(Listt){
             sum=sum +i
         }
     }
-    console.log(sum);
+    return sum;
 
 }
 
-f([1,2,4])
+console.log(f([1,2,4]));

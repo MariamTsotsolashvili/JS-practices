@@ -9,8 +9,8 @@ function f(arr){
             result = (arr[0]-arr[1])/arr[2];
         }
     }
-    console.log(result)
+    return result;
 
 }
 
-f([9,3,'b'])
+console.log(f([9,3,'b']));

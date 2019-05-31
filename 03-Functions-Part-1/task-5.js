@@ -6,7 +6,7 @@ function f() {
             scnd.push(i)
         }
     }
-    console.log(scnd);
+    return scnd;
 }
 f(first);
 
@@ -15,11 +15,11 @@ function isPositive(num) {
         throw new Error('parameter type is not a Number')
     }
     else if (num > 0) {
-        console.log(true); 
+        return true; 
     }
     else {
-        console.log(false);
+        return false;
     }
 }
 
-isPositive(-5)
+console.log(isPositive(-5));

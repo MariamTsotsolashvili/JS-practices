@@ -1,12 +1,11 @@
 function f(number) {
     if (typeof number === "number") {
-        console.log(number**3);
-
+        return number**3;
     }
     else {
         throw new Error ('parameter type is not a Number');
     }
 }
 
-f(5);
-f('content');
+console.log(f(5));
+console.log(f('content'));

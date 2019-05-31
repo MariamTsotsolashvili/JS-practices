@@ -13,7 +13,7 @@ function getDivisors(item) {
     if (typeof item !== "number") {
         throw new Error('parameter type is not a Number');
     }
-    console.log(divs);
+    return divs;
 }
 
-getDivisors(15);
+console.log(getDivisors(15));
