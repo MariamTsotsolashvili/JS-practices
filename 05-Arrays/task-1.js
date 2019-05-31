@@ -1,4 +1,4 @@
-var forEach = function(arr,func) {
+let forEach = function(arr,func) {
     if (!Array.isArray(arr)) {
         throw new Error('first parameter should an Array');
     }
