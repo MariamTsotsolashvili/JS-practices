@@ -14,10 +14,7 @@ function reduce(arr, func, strn) {
 
     for (let i = 0; i < arr.length; i++) {
         let fn = func(strn,arr[i], i, arr);
-
-        if (fn) {
-            strn = fn;
-        }
+        strn = fn;
     }
     return strn;
 }

@@ -14,10 +14,7 @@ function reduceRight(arr, func, strn) {
 
     for (let i = arr.length - 1; i >= 0; i--) {
         let fn = func(strn,arr[i], i, arr);
-
-        if (fn) {
-            strn = fn;
-        }
+        strn = fn;
     }
     return strn;
 }
