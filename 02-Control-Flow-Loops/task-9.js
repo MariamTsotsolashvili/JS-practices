@@ -1,5 +1,5 @@
-var i;
-var j;
+let i;
+let j;
 
 for (i = 2 ; i <= 10; i++) {
    var prime = true;

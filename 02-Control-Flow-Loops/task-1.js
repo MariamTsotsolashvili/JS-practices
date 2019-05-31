@@ -1,6 +1,6 @@
-var a = 1;
-var b = 2;
+let a = 1;
+let b = 2;
 
-var result = (a + b < 4) ? true : false;
+let result = (a + b < 4) ? true : false;
 
 console.log(result);

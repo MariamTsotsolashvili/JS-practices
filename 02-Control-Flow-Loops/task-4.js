@@ -1,4 +1,4 @@
-var a = 0;
+let a = 0;
 switch (a) {
     case 0:
         console.log( 0 );
