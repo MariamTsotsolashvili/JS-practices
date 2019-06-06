@@ -1,5 +1,13 @@
-const person = {
-    get salary() {
+const person = {};
+
+Object.defineProperty(person, 'rate',{
+    configurable: false,
+    enumerable: false,
+    writable: true
+});
+
+Object.defineProperty(person, 'salary',{
+    get() {
         let day = new Date().getDate();
         if (person.rate) {
             return this.rate * day;
@@ -7,19 +15,14 @@ const person = {
         else {
             return 0;
         }
-    }
-};
-
-Object.getOwnPropertyDescriptor(person, 'rate',{
-    configurable: false,
-    enumerable: false
-});
-
-Object.getOwnPropertyDescriptor(person, 'salary',{
-    writable: false,
-    enumerable: false
+    },
+    set(){
+        throw new Error('Salary can not be changed');
+    },
 });
 
 person.rate = 30;
+person.salary = 12;
 
 console.log(person.salary);
+
