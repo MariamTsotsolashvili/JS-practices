@@ -2,18 +2,19 @@ function CoffeeMachine(power) {
     this.waterAmount = 0;
     let WATER_HEAT_CAPACITY = 4200;
     let self = this;
+    let timerId;
     
     function getBoilTime() {
-            return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
-        }
+        return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
         
     function onReady() {
-            timeId = void 0;
-            console.log('Coffee is ready');
-        }
+        timerId = void 0;
+        console.log('Coffee is ready');
+    }
 
     this.run = function() {
-            timerId =  setTimeout(onReady, getBoilTime());
+        timerId =  setTimeout(onReady, getBoilTime());
     };
 
     this.stop = function(){
